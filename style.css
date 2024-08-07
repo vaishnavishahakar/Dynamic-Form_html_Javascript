@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    padding: 30px;
+    margin: 0 15px;
+}
+h1{
+    position: relative;
+    font-size: 20px;
+    font-weight: 800;
+    color: #000;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.container form{
+    position: relative;
+    margin-top: 16px;
+    min-height: 490px;
+    background-color: #fff;
+}
+.container form .details{
+    margin-top: 30px;
+}
+.container form .title{
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 15px 0;
+    color: #000;
+}
+.container form .fields{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+form .fields .input-field{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin: 4px 0;
+}
+.input-field label{
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+}
+.input-field input{
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+
+.buttons{
+    display: inline-flex;
+    margin-inline: auto;
+}
+.save-btn{
+    height: 45px;
+    padding: 0 50px;
+    margin: 20px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background-color: #2e6d2e;
+    color: #fff;
+    border-radius: 5px;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+.save-btn:hover{
+    background-color: rgb(40, 170, 40);
+}
+
+.error-message{
+    font-size: 12px;
+    color: red;
+}
+
+.download-btn{
+    height: 45px;
+    padding: 0 50px;
+    margin: 20px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background-color: rgb(84, 170, 168);
+    color: #fff;
+    border-radius: 5px;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+.download-btn:hover{
+    background-color: rgb(172, 249, 248);
+}
+
+.clear-btn{
+    background-color: #ad4432;
+    height: 45px;
+    margin: 20px;
+    padding: 0 50px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+.clear-btn:hover{
+    background-color: rgb(254, 119, 95);
+}
+
+
+/* Small Devices  */
+@media screen and (min-width: 320px) and (max-width: 600px){
+    .container{
+        padding: 30px 35px;
+    }
+    .save-btn{
+        margin: 10px 20px;
+        max-width: 200px;
+    }
+    .clear-btn{
+        margin: 10px 20px;
+        max-width: 200px;
+    }
+}
+
+ /* Normal Devices  */
+@media screen and (min-width: 601px) and (max-width: 768px){
+    .container form .fields{
+        display: ruby;
+    }
+    form .fields .input-field{
+        display: inline-block;
+        width: 222px;
+    }
+    .save-btn{
+        margin: 15px 0;
+    }
+    .clear-btn{
+        margin: 15px 33px;
+    }
+}
+
+/* Tablets Devices  */
+@media screen and (min-width: 769px) and (max-width: 992px){
+    .save-btn{
+        margin: 15px 110px;
+    }
+    .clear-btn{
+        margin: 15px 33px;
+    }
+}
+
+/* Large Devices  */
+@media screen and (min-width: 993px) and (max-width: 1200px){
+    .save-btn{
+        margin: 15px 110px;
+    }
+    .clear-btn{
+        margin: 15px 110px;
+    }
+}

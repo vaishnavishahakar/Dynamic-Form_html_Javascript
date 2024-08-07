@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Data</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="headlineContainer">
+            <h1 class="headline">USER - DATA</h1>
+        </div>
+
+
+        <form action="" id="personalDetails">
+            <div class="form content">
+                <div class="details personal">
+                    <span class="title">Personal Details</span>
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>First Name</label>
+                            <input id="firstName" name="firstName" type="text" placeholder="Enter your name">
+                            <p id="firstNameError" class="error-message"></p>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Middle Name</label>
+                            <input id="middleName" name="middleName" type="text" placeholder="Enter middle name">
+                            <p id="middleNameError" class="error-message"></p>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Last Name</label>
+                            <input id="lastName" name="lastName" type="text" placeholder="Enter last name">
+                            <p id="lastNameError" class="error-message"></p>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Date Of Birth</label>
+                            <input id="dateOfBirth" name="dateOfBirth" type="date" placeholder="dd/mm/yyyy">
+                            <p id="dateOfBirthError" class="error-message"></p>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Age</label>
+                            <input id="age" name="age" type="text" placeholder="Enter age" disabled>
+                            <p id="ageError" class="error-message"></p>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input id="emailAddress" name="emailAddress" placeholder="Enter your email">
+                            <p id="emailAddressError" class="error-message"></p>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Address Line 1</label>
+                            <input id="addressLine1" name="addressLine1" type="text" placeholder="Enter address line 1">
+                            <p id="addressLine1Error" class="error-message"></p>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Address Line 2</label>
+                            <input id="addressLine2" name="addressLine2" type="text" placeholder="Enter address line 2">
+                            <p id="addressLine2Error" class="error-message"></p>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Landmark</label>
+                            <input id="addressLandmark" name="addressLandmark" type="text" placeholder="Enter landmark">
+                            <p id="addressLandmarkError" class="error-message"></p>
+                        </div>
+
+                        <div class="input-field">
+                            <label>City</label>
+                            <input id="city" name="city" type="text" placeholder="Enter city">
+                            <p id="cityError" class="error-message"></p>
+                        </div>
+
+                        <div class="input-field">
+                            <label>State</label>
+                            <input id="state" name="state" type="text" placeholder="Enter state">
+                            <p id="stateError" class="error-message"></p>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Country</label>
+                            <input id="country" name="country" type="text" placeholder="Enter country">
+                            <p id="countryError" class="error-message"></p>
+                        </div>
+
+                        <div class="input-field">
+                            <label>PIN Code</label>
+                            <input id="pincode" name="pincode" type="text" maxlength="6" placeholder="Enter pin code">
+                            <p id="pincodeError" class="error-message"></p>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mobile Number</label>
+                            <input id="mobileNumber" name="mobileNumber" type="text" maxlength="10"
+                                placeholder="Enter mobile number">
+                            <p id="mobileNumberError" class="error-message"></p>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Alternate Mobile Number</label>
+                            <input id="alternateMobileNumber" name="alternateMobileNumber" type="text" maxlength="10"
+                                placeholder="Enter another no.">
+                            <p id="alternateMobileNumberError" class="error-message"></p>
+                        </div>
+
+                        <div class="buttons">
+                            <button type="submit" class="save-btn">
+                                Save
+                            </button>
+                            <button type="button" class="download-btn">
+                                Download CSV
+                            </button>
+                            <button type="reset" class="clear-btn">
+                                Clear
+                            </button>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
